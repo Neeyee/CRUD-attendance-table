@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meeting Attendance</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    
+</head>
+<body>
+    <table id="attendanceTable">
+        <h3>Attendance table <span>Add employee</span></h3>
+        <input type="text" placeholder="Add employee" id="addEmployee"> 
+        <thead>
+            <tr>
+                <th>Edit</th>
+                <th>Employee</th>
+                <th>Attendance</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><span>e</span></th>
+                <th>John Doe</th>
+                <th>
+                    <select name="attendance">
+                        <option value="" disabled selected>Select status</option>
+                        <option value="present">Present</option>
+                        <option value="absent">Absent</option>
+                    </select>
+                </th>
+                <th><span id="delete">d</span></th>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script src="meeting.js"></script>
+    
+</body>
+</html>
